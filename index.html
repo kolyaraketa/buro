@@ -41,7 +41,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="#213444">
 
 
-  <link rel="stylesheet" href="css/style.css?t=1604237755243">
+  <link rel="stylesheet" href="css/style.css?t=1604239305891">
 
 
 
@@ -1037,8 +1037,8 @@ const controls = new OrbitControls(camera, renderer.domElement);
 const element = document.querySelector('.intro__art-body');
 function renderFunc() {
   const { clientWidth, clientHeight } = element;
-  renderer.setPixelRatio(window.devicePixelRatio);
-  renderer.setSize(clientWidth / 2, clientWidth / 2, false);
+  renderer.setPixelRatio(1);
+  renderer.setSize(clientWidth, clientWidth, false);
   camera.aspect = 1;
   camera.updateProjectionMatrix();
 }
@@ -1182,7 +1182,7 @@ gsap.timeline({ defaults: { duration: .35 }, repeat: 1, yoyo: true })
   
   
   
-    <script src="js/scripts.js?t=1604237755243"></script>
+    <script src="js/scripts.js?t=1604239305891"></script>
   
 
 </body>
